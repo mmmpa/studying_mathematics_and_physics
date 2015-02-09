@@ -1,1 +1,1 @@
-$(function(){});
+$(function(){new Vue({el:"#TEXT",data:{input:$("#SRC").text()},filters:{marked:marked}})});

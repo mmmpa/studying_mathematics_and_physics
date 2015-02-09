@@ -1,21 +1,66 @@
 <!doctype html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<title>Studying Mathematics andPhysics</title>
-	<link rel="stylesheet" href="css/css.css">
-	<script type="text/javascript" src="js/base.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+  <meta charset="UTF-8">
+  <title>Studying Mathematics andPhysics</title>
+  <link rel="stylesheet" href="css/css.css">
+  <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-	<header class="w700 block-centering">
-		<h1 class="bigger">Studying Mathematics andPhysics</h1>
-		<h2 class="big">index</h2>
-	</header>
-	<article class="w700 block-centering">
-		<section>
-			<p>index</p>
-		</section>
-	</article>
+<div class="w600 block-centering">
+<header>
+  <h1 class="bigger">Studying Mathematics andPhysics</h1>
+  <h2 class="big">index</h2>
+</header>
+  <article>
+    <section id="TEXT" v-html="input | marked">
+    </section>
+  </article>
+</div>
+<code id="SRC">
+# これは物理と数学の自習ページです。
+
+「ゲームプログラミングのための数学と物理 http://www.amazon.co.jp/dp/4939007898?tag=2nin-22 」を読みながら Javascript（Typescript）で式を実装していくことにより、物理、数学、Javascript の理解を深めることが目的です。
+
+全部は読めないので、興味がある項目をピックアップしてやっていければ良いと思っています。
+
+## 一般的なテクニック
+1. 演算
+1. 代数
+1. 三角法とピタゴラス
+1. ベクトル
+1. 微積分学
+
+## 弾道額と衝突
+1. 加速度、質量、エネルギー
+1. 単純な形状同士の衝突判定
+1. 衝突の解決
+1. 複雑な形状の衝突判定
+1. 単純な玉突きゲーム
+
+## より複雑な運動
+1. より複雑な運動
+1. 力とニュートン則
+1. 角運動
+1. 摩擦
+1. ひもと滑車とコンベヤーベルト
+1. 振動
+
+## 3D グラフィックス数学
+（とりあえずパス）
+
+## ゲームのアルゴリズム
+1. 何でも高速化
+1. タイルベースのゲーム
+1. 迷路
+1. ゲーム理論とAI
+1. 探索のテクニック
+
+
+
+
+
+</code>
 </body>
 </html>

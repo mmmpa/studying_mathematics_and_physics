@@ -4,3 +4,29 @@ body
 	padding: 20px
 section
 	margin: 40px 0
+#SRC
+	display: none
+#TEXT
+	h1,h2,h3,h4,h5,h6
+		font-weight: bold
+		margin-top: 30px
+	h1
+		@extend .bigger
+	h2
+		@extend .big
+	h3
+		@extend .normal
+	h4
+		@extend .small
+	h5
+		@extend .smaller
+	h6
+		@extend .smallest
+	p
+		@extend .read
+		margin-top: 1em
+	ol
+		margin: 10px 0 0 25px
+	li
+		margin-top: 5px
+		list-style: decimal

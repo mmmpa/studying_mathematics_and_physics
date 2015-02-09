@@ -43,12 +43,13 @@ var base_js_watch = [
     'bower_components/zepto/zepto.min.js',
     'bower_components/underscore/underscore.js',
     'bower_components/vue/dist/vue.min.js',
+    'bower_components/marked/marked.min.js'
 ];
 var generated = '../js';
 
 gulp.task('base_js', function () {
     gulp.src(base_js_watch)
-        .pipe(uglify())
+       // .pipe(uglify())
         .pipe(concat('base.js'))
         .pipe(gulp.dest(generated));
 });
