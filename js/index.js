@@ -1,1 +1,1 @@
-$(function(){new Vue({el:"#TEXT",data:{input:$("#SRC").text()},filters:{marked:marked}})});
+$(function(){new Vue({el:"#TEXT",data:{input:$("#SRC").text()}})}),Vue.filter("haml",function(e){return haml.compileHaml({source:e})()});

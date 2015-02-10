@@ -42,8 +42,9 @@ gulp.task('default', function () {
 var base_js_watch = [
     'bower_components/zepto/zepto.min.js',
     'bower_components/underscore/underscore.js',
+    'bower_components/underscore.string/dist/underscore.string.min.js',
     'bower_components/vue/dist/vue.min.js',
-    'bower_components/marked/marked.min.js'
+    'other/clientside-haml-js/lib/haml.js'
 ];
 var generated = '../js';
 
