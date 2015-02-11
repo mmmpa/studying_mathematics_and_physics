@@ -27,7 +27,7 @@ function numberToBaseString(number:number, base:number): string {
 }
 
 $(() => {
-	# n 進法のやつ
+	// n 進法のやつ
 	$('#S1_BASE_NUMBER').click(():void => {
 		$('#S1_BASE_NUMBER_RESULT').val(numberToBaseString(+$('#S1_NUMBER').val(), +$('#S1_BASE').val()));
 	});
