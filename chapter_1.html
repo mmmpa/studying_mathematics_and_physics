@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Studying Mathematics andPhysics</title>
+  <link rel="stylesheet" href="css/css.css">
+  <script type="text/javascript" src="js/base.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/chapter_1.js"></script>
+</head>
+<body>
+<div class="w600 block-centering">
+<header>
+  <h1 class="bigger">一般的なテクニック</h1>
+</header>
+  <article>
+    <section id="TEXT" v-html="input | haml">
+
+    </section>
+  </article>
+</div>
+<code id="SRC">
+%ol
+  %li
+    %h1 数について
+    %h2{class:'thin'} n 進法にするやつ
+    %div{class:'center'}<
+      整数
+      %br
+      %input{type:'text', value:'255', class:'short', id:'S1_NUMBER'}
+    %div{class:'center'}<
+      基数
+      %br
+      %input{type:'text', value:'16', class:'short', id:'S1_BASE'}
+    %div
+      %input{type:'submit', value:'計算', class:'button blue', id:'S1_BASE_NUMBER'}
+    %div{class:'center'}<
+      結果
+      %br
+      %input{type:'text', class:'short', id:'S1_BASE_NUMBER_RESULT'}
+</code>
+</body>
+</html>

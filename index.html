@@ -11,7 +11,6 @@
 <div class="w600 block-centering">
 <header>
   <h1 class="bigger">Studying Mathematics andPhysics</h1>
-  <h2 class="big">index</h2>
 </header>
   <article>
     <section id="TEXT" v-html="input | haml">
@@ -22,12 +21,18 @@
 <code id="SRC">
 %h1 これは物理と数学の自習ページです。
 %p 全部は読めないので、興味がある項目をピックアップしてやっていければ良いと思っています。
-%p 「ゲームプログラミングのための数学と物理 http://www.amazon.co.jp/dp/4939007898?tag=2nin-22 」を読みながら Javascript（Typescript）で式を実装していくことにより、物理、数学、Javascript の理解を深めることが目的です。
+%p< 「
+  %a(href="http://www.amazon.co.jp/dp/4939007898?tag=2nin-22")
+    ゲームプログラミングのための数学と物理
+  」を読みながら Javascript（Typescript）で式を実装していくことにより、物理、数学、Javascript の理解を深めることが目的です。
 
 %ol
   %li
     %h2 一般的なテクニック
     %ol
+      %li
+        %a(href="chapter_1.html" title="abc_def")<
+          数について
       %li 演算
       %li 代数
       %li 三角法とピタゴラス
