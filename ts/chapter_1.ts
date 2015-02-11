@@ -2,7 +2,6 @@
 /// <reference path="../vendor/dts/underscore.string/underscore.string.d.ts" />
 /// <reference path="../vendor/dts/zepto/zepto.d.ts" />
 
-
 function numberToBaseString(number: number, base: number): string {
 	if (base <= 1) {
 		throw 'out';
