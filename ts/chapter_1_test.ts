@@ -93,4 +93,8 @@ describe("addBinaryString", () => {
 	it("11 -> 100", () => {
 		expect(addBinaryOne('11')).toBe('100');
 	});
+
+	it("100 -> 101", () => {
+		expect(addBinaryOne('100')).toBe('101');
+	});
 });

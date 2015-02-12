@@ -51,7 +51,6 @@ function baseStringToValue(value: string, base: number): number {
 function addBinaryString(first: string, second: string): string {
 	var compute: Function = (result, b1, b2): string => {
 		if (b1.length === 0 && b2.length === 0) {
-			console.log(result)
 			return result;
 		}
 
@@ -59,22 +58,20 @@ function addBinaryString(first: string, second: string): string {
 		var n2: string = b2.charAt(b2.length - 1);
 		var next_1: string = b1.slice(0, b1.length - 1);
 		var next_2: string = b2.slice(0, b2.length - 1);
-		if (next_1.length && !next_2.length) {
-			next_2 = '0'
-		} else if(!next_1.length && next_2.length) {
-			next_1 = '0'
-		}
-		if (n1 === '1' && n2 === '1') {
-			//ŒJ‚èã‚°
-			next_1 = addBinaryOne(next_1);
-			return compute('0' + result, next_1, next_2);
-		} else if (n1 === '0' && n2 === '0') {
-			return compute('0' + result, next_1, next_2);
-		} else {
-			return compute('1' + result, next_1, next_2);
-		}
-	}
+		var next_result:string = (():string => {
+			switch (true) {
+				case (n1 === '1' && n2 === '1'):
+					next_1 = addBinaryOne(next_1);
+					return '0' + result
+				case (n1 === '1' || n2 === '1'):
+					return '1' + result
+				default:
+					return '0' + result
+			}
+		})();
 
+		return compute(next_result, next_1, next_2);
+	}
 	return compute('', first, second);
 }
 
