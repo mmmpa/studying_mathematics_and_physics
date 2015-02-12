@@ -26,6 +26,9 @@ function numberToBaseString(number: number, base: number): string {
 }
 
 function baseStringToValue(value: string, base: number): number {
+	if (base <= 1) {
+		throw 'out';
+	}
 	var compute = (value: string, this_base: number) => {
 		if (value.length === 1) {
 			return convert(value) * this_base;
