@@ -111,4 +111,15 @@ $(() => {
 	$('#S1_STRING_VALUE').click((): void => {
 		$('#S1_STRING_VALUE_RESULT').val(baseStringToValue($('#S1_STRING').val(), +$('#S1_BASE2').val()));
 	});
+
+	// 2 進法をすすめる
+	$('#S1_BINARY_BASE_ADD').click((): void => {
+		$('#S1_BINARY_BASE').val(addBinaryOne($('#S1_BINARY_BASE').val()));
+	});
+
+	// 2 進法の足し算
+	$('#S1_BINARY_BASE_PLUS').click((): void => {
+		$('#S1_BINARY_BASE_PLUS_RESULT').val(addBinaryString($('#S1_BINARY_BASE1').val(), $('#S1_BINARY_BASE2').val()));
+	});
+
 });

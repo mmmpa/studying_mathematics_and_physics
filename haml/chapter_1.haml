@@ -1,0 +1,53 @@
+%section
+  %a(href='chapter_1_test.html')<
+    この章で書いたメソッドなどのテスト
+%ol
+  %li
+    %h1 数について
+    %h2(class="thin") n 進法にする
+    %div(class='center')<
+      整数
+      %br
+      %input(type='text' value='255' class='short' id='S1_NUMBER')
+    %div(class='center')<
+      基数
+      %br
+      %input(type='text' value='16' class='short' id='S1_BASE')
+    %div
+      %input(type='submit' value='計算' class='button blue' id='S1_BASE_NUMBER')
+    %div(class='center')<
+      結果
+      %br
+      %input(type='text' class='short' id='S1_BASE_NUMBER_RESULT')
+    %h2(class='thin') n 進法から 10 進法に戻す
+    %div(class='center')<
+      整数
+      %br
+      %input(type='text' value='ff' class='short' id='S1_STRING')
+    %div(class='center')<
+      基数
+      %br
+      %input(type='text' value='16' class='short' id='S1_BASE2')
+    %div
+      %input(type='submit' value='計算' class='button blue' id='S1_STRING_VALUE')
+    %div(class='center')<
+      結果
+      %br
+      %input(type='text' class='short' id='S1_STRING_VALUE_RESULT')
+    %h2(class="thin") 2 進法を一つすすめる
+    %div(class='center')<
+      2 進法
+      %br
+      %input(type='text' value='101' class='short2 right' id='S1_BINARY_BASE')
+    %div
+      %input(type='submit' value='すすめる' class='button blue' id='S1_BINARY_BASE_ADD')
+    %h2(class="thin") 2 進法動詞の足し算
+    %div(class='center')<
+      2 進法
+      %div(class='new-line')
+        %input(type='text' value='1' class='short2 right' id='S1_BINARY_BASE1')
+      %div(class='new-line')
+        %input(type='text' value='1' class='short2 right' id='S1_BINARY_BASE2')
+    %div(class='new-line')
+      %input(type='text' value='' class='short2 right' id='S1_BINARY_BASE_PLUS_RESULT')
+      %input(type='submit' value='足す' class='button blue' id='S1_BINARY_BASE_PLUS')

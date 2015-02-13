@@ -77,7 +77,7 @@ describe("addBinaryString", () => {
 	});
 });
 
-describe("addBinaryString", () => {
+describe("addBinaryOne", () => {
 	it("0 -> 1", () => {
 		expect(addBinaryOne('0')).toBe('1');
 	});
