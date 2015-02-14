@@ -4,50 +4,50 @@
 %ol
   %li
     %h1 数について
-    %h2(class="thin") n 進法にする
-    %div(class='center')<
+    %h2.thin n 進法にする
+    %div.center<
       整数
       %br
-      %input(type='text' value='255' class='short' id='S1_NUMBER')
-    %div(class='center')<
+      %input#S1_NUMBER.short(type='text' value='255')
+    %div.center<
       基数
       %br
-      %input(type='text' value='16' class='short' id='S1_BASE')
+      %input#S1_BASE.short(type='text' value='16')
     %div
-      %input(type='submit' value='計算' class='button blue' id='S1_BASE_NUMBER')
-    %div(class='center')<
+      %input#S1_BASE_NUMBER.button.blue(type='submit' value='計算')
+    %div.center<
       結果
       %br
-      %input(type='text' class='short' id='S1_BASE_NUMBER_RESULT')
-    %h2(class='thin') n 進法から 10 進法に戻す
-    %div(class='center')<
+      %input#S1_BASE_NUMBER_RESULT.short(type='text')
+    %h2.thin n 進法から 10 進法に戻す
+    %div.center<
       整数
       %br
-      %input(type='text' value='ff' class='short' id='S1_STRING')
-    %div(class='center')<
+      %input#S1_STRING.short(type='text' value='ff')
+    %div.center<
       基数
       %br
-      %input(type='text' value='16' class='short' id='S1_BASE2')
+      %input#S1_BASE2.short(type='text' value='16')
     %div
-      %input(type='submit' value='計算' class='button blue' id='S1_STRING_VALUE')
-    %div(class='center')<
+      %input#S1_STRING_VALUE.button.blue(type='submit' value='計算')
+    %div.center<
       結果
       %br
-      %input(type='text' class='short' id='S1_STRING_VALUE_RESULT')
-    %h2(class="thin") 2 進法を一つすすめる
-    %div(class='center')<
+      %input#S1_STRING_VALUE_RESULT.short(type='text')
+    %h2.thin 2 進法を一つすすめる
+    %div.center<
       2 進法
       %br
-      %input(type='text' value='101' class='short2 right' id='S1_BINARY_BASE')
+      %input#S1_BINARY_BASE.short2.right(type='text' value='101')
     %div
-      %input(type='submit' value='すすめる' class='button blue' id='S1_BINARY_BASE_ADD')
-    %h2(class="thin") 2 進法動詞の足し算
-    %div(class='center')<
+      %input#S1_BINARY_BASE_ADD.button.blue(type='submit' value='すすめる')
+    %h2.thin 2 進法動詞の足し算
+    %div.center<
       2 進法
-      %div(class='new-line')
-        %input(type='text' value='1' class='short2 right' id='S1_BINARY_BASE1')
-      %div(class='new-line')
-        %input(type='text' value='1' class='short2 right' id='S1_BINARY_BASE2')
-    %div(class='new-line')
-      %input(type='text' value='' class='short2 right' id='S1_BINARY_BASE_PLUS_RESULT')
-      %input(type='submit' value='足す' class='button blue' id='S1_BINARY_BASE_PLUS')
+      %div.new-line
+        %input#S1_BINARY_BASE1.short2.right(type='text' value='1')
+      %div.new-line
+        %input#S1_BINARY_BASE2.short2.right(type='text' value='1')
+    %div.new-line
+      %input#S1_BINARY_BASE_PLUS_RESULT.short2.right(type='text' value='')
+      %input#S1_BINARY_BASE_PLUS.button.blue(type='submit' value='足す')
