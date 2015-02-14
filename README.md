@@ -1,2 +1,2 @@
 # My Studying Memo
-memo.
+http://mp.mmmpa.net/
